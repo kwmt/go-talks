@@ -1,0 +1,295 @@
+GoConに行ってきました
+GDG Kobe GoCon報告会 2 Jun 2013 
+
+
+Yasutaka Kawamoto
+Freelance
+
+@kwmt27
+http://kwmt27.net
+
+* GoConとは？
+
+
+* 合コン？
+.image gocon-spring/gocon-img1.jpg
+
+* No
+
+* Go言語カンファレンス(GoCon)
+日時：2013/04/13(土)　10:00〜18:00
+場所：オラクル青山センター（東京）
+
+.link http://connpass.com/event/1906/ Go Conference 2013 spring
+
+.image gocon-spring/gocon_spring.png
+
+
+* 自己紹介
+
+ECUのソフト開発に携わっていました。
+言語はCです。
+
+主にGDG神戸で活動してます
+
+.link http://slidesha.re/11eA7ur Go言語のスライスを理解しよう 817 views
+.link http://slidesha.re/187R0tM Go言語によるwebアプリの作り方 2,653 views
+
+名古屋のGo言語勉強会に2回遠征したりしました。
+
+.link http://bit.ly/16zOzoV gointall --簡単にGoをインストールするツール
+Go言語が好きで会社を辞めました。
+
+
+
+* 質問
+
+- Go言語を知らない方？
+
+* Go言語の雰囲気だけ
+
+* Released
+- 2009年10月 発表のコンパイラ言語
+- 2012年3月   安定版Go version 1リリース
+- 2013年5月 Go1.1リリース
+- 2013年12月 Go1.2リリース予定
+.link https://docs.google.com/document/d/106hMEZj58L9nq9N9p7Zll_WKfo-oyZHFyI6MttuZmBU/edit Go Release Cycle
+
+
+* Code
+
+* Hello, Gophers
+
+.play gocon-spring/hello.go
+
+* goroutine
+
+.play gocon-spring/time.go
+.html gocon-spring/goroutine.html
+
+* 本題
+
+* なぜ行ったの？
+
+Go言語は私にとって、
+「新しいものが与えられて、おもしろいから、わしゃわしゃ触ってみてる」
+っていう状態でとくに明確な理由があるわけではありませんでした。
+
+あえていうなら、次のような理由です。
+
+私は仕事でC言語を扱っており趣味でJavaを扱っているのですが、
+Javaはやたらとコードが長くて嫌でした。
+
+その点、GoはCみたいにコードが短くかけ、
+オブジェクト指向としても書けるのが気に入っているというだけでした。
+
+そんな中、事前情報で、Goのコントリビュータでもある鵜飼さんが
+「なぜGoなのか」について話すという情報をキャッチしていたので、
+その話しを聞きたいと思ったからです。
+
+
+* 募集開始
+.image gocon-spring/numberofpeple.png 100 600
+
+2月の平日11時頃に募集開始されたのですが、4月のイベントにも関わらず、
+18時頃にはほとんど席が埋まりました。
+
+.link http://connpass.com/event/1906/ Go Conference 2013 spring
+
+東京でGopher達が増えていく予感がしました。
+
+
+* 会場の雰囲気
+
+.link https://plus.google.com/u/0/events/c65oeuq6gjio8of7akb2l4928h0?cfem=1 GoCon2013 Japan - Google+
+
+
+* タイムテーブル
+
+.link http://slidesha.re/152yy6I Go conference 2013 spring  オープニング資料
+
+- 10:00〜 	   オープニング
+- 10:15〜15:00 ハンズオン
+- 15:00〜18:00 プレゼン(20分ずつ7名)
+
+* 10:00〜 	   オープニング
+
+.link https://plus.google.com/u/0/112193031623566725720/posts/Mjdn58t6nAb Andrew Gerrandさんのオープニングスピーチがあったようです。
+
+
+* 余談ですが
+
+朝5:30神戸駅発→9:30会場着の予定でした。
+しかし、電車に乗って3分後、、、
+
+* 地震が起きました。
+
+.image gocon-spring/jisin.jpg  550 800
+
+* 電車が2時間動きませんでした。
+ということで、午前中は参加出来なかったのです。。
+
+余談終わり
+
+* 10:15〜15:00 ハンズオン
+
+ハンズオンは次のような感じで進んでいました。
+
+最初のオープニング資料に書かれていますが、３つのレベルにわかれて、それぞれに講師がついて、もくもくとやるという感じでした。
+
+- “A Tour of Go”をメインにやる初心者向け
+- Goのセットアップから簡単なプログラムの実行する 中級者向け 
+- すでにGoプログラムを書いている上級者向け 
+
+
+* 15:00〜18:00 プレゼン
+
+1.Go言語で作るWebアプリ
+2.Go on AppEngine
+3.Goroutine & Channel in Go
+4.go 1.1 scheduler
+5.Goのどのあたりがよいか
+6.Goでゲームを作ろう
+7.A Case Study: The Selection of Go at Apcera
+
+* 各プレゼン内容を少しずつ紹介
+
+* 1.Go言語で作るWebアプリ
+@tenntennさん
+
+.link http://goo.gl/iMECW 資料
+
+Goで簡単なWebサーバの作り方を紹介したあと、RESTful APIの作り方の紹介でした。
+
+つまり、Goなら簡単にサーバが作れるよ という話しです。
+
+* 2.Go on AppEngine
+@najeiraさん
+
+.link http://goo.gl/RP2Nc 資料
+
+GAE/Goの特徴についての話しでした。
+面白かったのが、スピンアップの速度やメモリ使用量をPythonと比較してたところです。
+
+「新規プロジェクトの場合はGoは選択肢に入る」とまとめていらっしゃいます。
+
+* 3.Goroutine & Channel in Go
+@Jxck_さん
+
+.link http://goo.gl/1ZvJH 資料
+
+ゴルーチンとチャネルの基本的な話しでした。
+プレゼン資料は英語なので、下記のブログが読みやすいと思います。
+
+.link http://d.hatena.ne.jp/Jxck/20130414/1365960707 Go の並行処理
+
+100,000 個の goroutine を起動して、その時間とメモリの使用量を調べているところが興味深いです。
+ゴルーチンを使えばかなり低コストという話でした。
+
+* 4.go 1.1 scheduler
+@methanさん
+
+.link https://gist.github.com/methane/5377227#file-goscheduler-mdGo 資料
+
+ゴルーチンの設計・実装がどうなっているかという話しでした。
+「C言語とアセンブラしか出て来ません( ｰ`дｰ´)ｷﾘｯ」って言ってました。
+意外と短くて読んでみようという気にさせて頂きました。
+
+* 5.Goのどのあたりがよいか
+鵜飼さん
+
+.link http://ukai-go-talks.appspot.com/2013/gocon.slide#1 資料
+
+C++/Java/Pythonなど比較しながら、Goの良いところの紹介でした。
+「（ゴーファーもコードも）きもいと思ってたのが、かわいいと思えるようになるのがGo言語のすごいところ」
+とおっしゃっていたのが印象的でした。
+
+質問で、「Goのターゲットはどこですか？」という質問に対して、
+Googleのバックエンドがターゲットということでしたが、
+フロントもテンプレートエンジンもあって使いやすいですよとのことでした。
+
+この資料は永久保存版だと思います。
+
+
+* 6.Goでゲームを作ろう
+@moriyoshiさん
+
+.link http://www.slideshare.net/moriyoshi/gocon2013 資料
+
+.link http://bit.ly/ShkXpe Super Hexagon Trailer - YouTube
+
+このゲームをGoで作って、Goでもゲームは作れるよという話しでした。
+作成にかかった時間は、3時間ぐらいだそうです。
+
+
+* 7.A Case Study: The Selection of Go at Apcera
+Derekさん
+
+.link http://www.slideshare.net/derekcollison/go-conference-japan 資料
+
+Apceraという会社を立ちあげ、Ruby大好きなのになぜGoを採用したかという話しでした。
+RubyとNode.jsと比較しているところがおもしろいです。
+
+英語で、話しも英語だったので、山口さんが訳してくれています。
+togetter 3ページ目の後半の方にあります。
+
+
+* 海外の状況
+
+* Google I/O  2013
+
+４つのセッションがありました。
+.link https://twitter.com/go_nuts/status/332614555719057410
+どれも盛況だったとのこと。
+
+来年I/Oは4つ以上のセッションがあると期待しています。
+
+* ML,G+
+
+.link https://groups.google.com/group/golang-nuts?hl=ja&pli=1 golang-nuts　
+数十スレッド/日以上でやりとり
+
+.link http://bit.ly/11ezKQr Go+ - Google+ コミュニティ
+8000人以上の参加
+
+* GopherCon
+2014/04/24-26開催予定
+
+.link http://www.gophercon.com/ GopherCon
+
+今なら$250,場所はデンバー
+
+.image gocon-spring/Denver.png 400 700
+
+* 海外で盛り上がって、東京でも盛り上がって、次は関西でも！
+
+* 一緒に盛り上げて行きませんか？
+.link https://groups.google.com/forum/#!forum/golang-jp golang-jp ML
+.link http://bit.ly/11ezwsA Golang JP - Google+ コミュニティ
+.link http://bit.ly/17ewv32 GitHub golang-samples
+.link http://golang.jp/ 公式サイトの日本語訳(version1に未対応箇所あり)
+.link https://github.com/kwmt/golangwiki GitHub golangwiki 公式サイトを翻訳中(目的：上記の補完)
+
+
+* おまけ
+* 女子率気になります？
+4/120
+
+* お持ち帰りできた？
+できました。
+
+.image gocon-spring/omotikaeri.jpg 500 700
+
+* 参考資料
+* 発表資料(まとめ)
+
+.html gocon-spring/presenter.html
+
+* togetter
+
+.link http://togetter.com/li/487380 春だ、GoConだ！ 
+
+* GoConに参加された方のブログ
+
+.html gocon-spring/blogs.html
+
