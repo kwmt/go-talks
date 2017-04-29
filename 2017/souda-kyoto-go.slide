@@ -1,0 +1,94 @@
+Goのライブラリを公開する方法
+そうだ Go、京都。 2017/04/29
+
+
+Yasutaka Kawamoto
+http://www.tech-vein.com/
+
+@kwmt27
+http://kwmt27.net
+
+
+* 自己紹介
+
+* 名前とか
+
+.html souda-kyoto-go/introduction.html
+
+* Goに関して
+
+.link http://kwmt27.net ブログ:53記事
+.link http://slidesha.re/11eA7ur Go言語によるwebアプリの作り方 35,379 views
+.link http://slidesha.re/187R0tM Go言語のスライスを理解しよう 20,768 views
+.link https://github.com/kwmt/golangwiki golang.orgの翻訳をしようとしていたり
+.link https://github.com/kwmt/goinstall
+.link https://github.com/kwmt/createtemplate 
+
+
+* 最近公開しているライブラリのご紹介
+
+* slack APIのラッパー
+.html souda-kyoto-go/mylib_slack.html
+
+* FCMのラッパー
+.html souda-kyoto-go/mylib_fcm.html
+
+* 複数のファイルの中身を1つのファイルにまとめるやつ
+.html souda-kyoto-go/mylib_combine.html
+
+* Androidのbuild.gradleに書いてる依存ライブリの最新バージョンを取得して表示するやつ
+.html souda-kyoto-go/mylib_libver.html
+
+* 本題
+
+* Goのライブラリを公開する方法のご紹介
+
+
+
+* 1.ライブラリのコードを書く
+.play souda-kyoto-go/go-print/print.go
+
+
+* 2.githubにプッシュ
+
+.link https://github.com/kwmt/go-print
+
+* 3.使う
+
+go get github.com/kwmt/go-print
+
+.play souda-kyoto-go/main.go
+
+
+* testを書く
+* testを書く
+
+.play souda-kyoto-go/go-print/print_test.go
+
+
+* READMEを書く
+* READMEを書く
+
+.image souda-kyoto-go/go-print-readme.png
+
+* godoc
+
+.html souda-kyoto-go/img_godoc.html
+
+* go report card
+
+.html souda-kyoto-go/img_goreportcard.html
+
+* Exampleを書く
+
+.html souda-kyoto-go/img_godoc_example.html
+
+* まとめ
+
+- 簡単に公開できるので、便利なツール作って公開してみてはいかがでしょうか😋
+
+
+
+
+
+
