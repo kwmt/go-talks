@@ -5,8 +5,8 @@ import (
 )
 
 func TestPrint(t *testing.T) {
-	expect := "そうだ京都Go"
-	actual := Print("そうだ京都Go")
+	expect := "そうだ Go、京都。"
+	actual := Print("そうだ Go、京都。")
 	if expect != actual {
 		t.Errorf("actual: %s, expect: %s", actual, expect)
 	}

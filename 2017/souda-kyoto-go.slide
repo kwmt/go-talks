@@ -13,31 +13,52 @@ http://kwmt27.net
 
 * 名前とか
 
-.html souda-kyoto-go/introduction.html
+河本泰孝
+- 株式会社techvein
+- アプリエンジニア(主にAndroid)
+- [[https://twitter.com/kwmt27][https://twitter.com/kwmt27]]
+- [[https://github.com/kwmt][https://github.com/kwmt]]
+
+.image souda-kyoto-go/gopher.png _ 100 
+
 
 * Goに関して
+* 2011年~2013年
 
-.link http://kwmt27.net ブログ:53記事
-.link http://slidesha.re/11eA7ur Go言語によるwebアプリの作り方 35,379 views
+2011年GoogleDeveloperDayのDevQuizで初めて触った
+.link https://github.com/kwmt/golangwiki
 .link http://slidesha.re/187R0tM Go言語のスライスを理解しよう 20,768 views
-.link https://github.com/kwmt/golangwiki golang.orgの翻訳をしようとしていたり
+.link http://slidesha.re/11eA7ur Go言語によるwebアプリの作り方 35,379 views
+.link http://kwmt27.net
 .link https://github.com/kwmt/goinstall
 .link https://github.com/kwmt/createtemplate 
 
+* 2014年~2015年
+
+ほとんど触らずアプリばっかり
 
 * 最近公開しているライブラリのご紹介
 
+* オレオレWebフレームワーク
+[[https://github.com/techvein/gozen][https://github.com/techvein/gozen]]
+.image souda-kyoto-go/mylib_gozen.png 500 _
+
 * slack APIのラッパー
-.html souda-kyoto-go/mylib_slack.html
+[[https://github.com/kwmt/slack][https://github.com/kwmt/slack]]
+.image souda-kyoto-go/mylib_slack.png 400 _
 
 * FCMのラッパー
-.html souda-kyoto-go/mylib_fcm.html
+[[https://github.com/kwmt/fcm][https://github.com/kwmt/fcm]]
+.image souda-kyoto-go/mylib_fcm.png 400 _
 
 * 複数のファイルの中身を1つのファイルにまとめるやつ
-.html souda-kyoto-go/mylib_combine.html
+[[https://github.com/kwmt/combine][https://github.com/kwmt/combine]]
+.image souda-kyoto-go/mylib_combine.png 400 _
 
 * Androidのbuild.gradleに書いてる依存ライブリの最新バージョンを取得して表示するやつ
-.html souda-kyoto-go/mylib_libver.html
+[[https://github.com/kwmt/libver][https://github.com/kwmt/libver]]
+.image souda-kyoto-go/mylib_libver.png 400 _
+
 
 * 本題
 
@@ -46,7 +67,12 @@ http://kwmt27.net
 
 
 * 1.ライブラリのコードを書く
+- コードを書く
 .play souda-kyoto-go/go-print/print.go
+
+- testを書く
+
+.play souda-kyoto-go/go-print/print_test.go
 
 
 * 2.githubにプッシュ
@@ -60,28 +86,29 @@ go get github.com/kwmt/go-print
 .play souda-kyoto-go/main.go
 
 
-* testを書く
-* testを書く
-
-.play souda-kyoto-go/go-print/print_test.go
-
-
 * READMEを書く
 * READMEを書く
 
 .image souda-kyoto-go/go-print-readme.png
 
 * godoc
+[[http://godoc.org/github.com/kwmt/go-print][http://godoc.org/github.com/kwmt/go-print]]
+[![GoDoc](https://godoc.org/github.com/kwmt/go-print?status.svg)](http://godoc.org/github.com/kwmt/go-print) 
+.image souda-kyoto-go/godoc.png 400 _
 
-.html souda-kyoto-go/img_godoc.html
 
 * go report card
+[[https://goreportcard.com/report/github.com/kwmt/go-print][https://goreportcard.com/report/github.com/kwmt/go-print]]
+[![Go Report Card](https://goreportcard.com/badge/github.com/kwmt/go-print)](https://goreportcard.com/report/github.com/kwmt/go-print)
+.image souda-kyoto-go/goreport-card.png 450 _
 
-.html souda-kyoto-go/img_goreportcard.html
+
 
 * Exampleを書く
+.image souda-kyoto-go/img_example_test.png 250 _
+.image souda-kyoto-go/godoc_example.png 250 _
 
-.html souda-kyoto-go/img_godoc_example.html
+
 
 * まとめ
 
